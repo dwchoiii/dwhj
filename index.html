@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>최동욱 · 최희정 결혼 알림</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="최동욱 · 최희정 결혼합니다">
+<meta property="og:description" content="2026년 9월 6일 일요일 낮 12시, 롯데호텔서울 무궁화. 가족과 친지분들만 모시고 조용히 예식을 올립니다.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500&amp;family=Noto+Serif+KR:wght@200;300;400&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html,body{margin:0;padding:0;background:#111110;-webkit-font-smoothing:antialiased}
+body{font-family:'Noto Serif KR',serif}
+a{color:#4a463d;text-decoration:none}
+a:hover{color:#141412}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes wipeIn{from{opacity:0;clip-path:inset(0 0 100% 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes barPulse{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
+</style>
+</helmet>
+<div style="min-height: 100vh; display: flex; justify-content: center; background: #111110">
+<div style="width: 100%; max-width: 440px; background: #f4f3ef; color: #141412; position: relative; overflow: hidden">
+
+  <button onClick="{{ toggleBgm }}" aria-label="배경음악" style="position:fixed;bottom:22px;right:calc(50% - 220px + 18px);z-index:40;height:30px;padding:0 12px;border:0;border-radius:0;background:rgba(20,20,18,.82);backdrop-filter:blur(8px);display:flex;align-items:center;gap:9px;cursor:pointer">
+    <span style="display:flex;align-items:center;gap:2px;height:12px">
+      <span style="{{ bar1 }}"></span>
+      <span style="{{ bar2 }}"></span>
+      <span style="{{ bar3 }}"></span>
+    </span>
+    <span style="font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:.22em;color:#e6e3db;padding-left:.22em">{{ bgmLabel }}</span>
+  </button>
+
+  <section data-screen-label="01 표지" style="position:relative;width:100%;aspect-ratio:3/4;background:#e2ded4">
+    <image-slot id="wed-hero" shape="rect" fit="cover" placeholder="표지 사진 (세로 3:4)"></image-slot>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(17,17,16,.62) 0%,rgba(17,17,16,.12) 42%,rgba(17,17,16,0) 70%)"></div>
+    <div style="position:absolute;left:26px;bottom:24px;right:26px;pointer-events:none;display:flex;align-items:flex-end;justify-content:space-between;gap:16px">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.34em;color:rgba(244,243,239,.86);padding-left:.34em">DONGWOOK &amp; HUIJEONG</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.2em;color:rgba(244,243,239,.7);white-space:nowrap;padding-left:.2em">2026.09.06</div>
+    </div>
+  </section>
+
+  
+
+  <section data-screen-label="02 제호" style="padding:44px 26px 40px;border-bottom:1px solid rgba(20,20,18,.14)">
+    <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(20,20,18,.14)">
+      <span style="font-size:10.5px;letter-spacing:.36em;color:#8c8578;padding-left:.36em">결혼 알림</span>
+      
+    </div>
+    
+    <h1 data-reveal="" style="margin: 26px 0 0; font-weight: 400; font-size: 40px; line-height: 1.24; letter-spacing: .06em; font-family: Noto Serif KR; font-style: normal">최동욱<br>최희정</h1><div data-reveal="" style="margin-top:16px;display:flex;flex-direction:column;gap:3px;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.22em;color:#8c8578;padding-left:.22em">
+      <span>DONGWOOK CHOI &amp;</span>
+      <span>HUIJEONG CHOE</span>
+    </div>
+    <div data-reveal="" style="margin-top:34px;display:flex;align-items:flex-end;gap:14px">
+      <div style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:82px;line-height:.82;letter-spacing:-.02em">9.6</div>
+      <div style="display:flex;flex-direction:column;gap:5px;padding-bottom:7px;font-family:'Cormorant Garamond',serif;font-size:11.5px;letter-spacing:.24em;color:#6b655a;padding-left:.24em">
+        <span>2026</span>
+        <span>SUN</span>
+      </div>
+    </div>
+  </section><section data-screen-label="03 인사말" style="padding:44px 26px 46px;border-bottom:1px solid rgba(20,20,18,.14)">
+    <div data-reveal="" style="font-size:10.5px;letter-spacing:.36em;color:#8c8578;padding-left:.36em">인사말</div>
+    <div style="margin-top:22px;display:flex;flex-direction:column;gap:20px;font-weight:300;font-size:15px;line-height:2.15;letter-spacing:.005em;color:#2e2b26;text-wrap:pretty">
+      <p data-reveal="" style="margin:0">서로를 향한 마음이 오래 머물러<br>이제 하나의 이름으로 살아가려 합니다.</p>
+      <p data-reveal="" style="margin:0">가까운 가족과 친지 마흔 분만 모시고<br>조용히 예식을 올립니다.</p>
+      <p data-reveal="" style="margin:0">따로 청하여 모시지 못하는 마음을<br>너그러이 헤아려 주시고, 먼 곳에서<br>축복해 주시면 더없이 감사하겠습니다.</p>
+    </div>
+    <div data-reveal="" style="margin-top:30px;display:flex;align-items:center;gap:12px">
+      <div style="width:26px;height:1px;background:rgba(20,20,18,.3)"></div>
+      <div style="font-size:12.5px;letter-spacing:.14em;color:#4a463d;padding-left:.14em">최동욱 · 최희정 올림</div>
+    </div>
+  </section>
+
+  <section data-screen-label="04 사진" style="padding:0">
+    <div data-reveal="" style="position:relative;width:100%;aspect-ratio:16/11;background:#e2ded4"><image-slot id="wed-p2" shape="rect" fit="cover" placeholder="사진 2 (가로)"></image-slot></div>
+    <div style="display:flex;gap:1px;background:rgba(20,20,18,.14)">
+      <div data-reveal="" style="position:relative;flex:1.35;aspect-ratio:4/5;background:#e2ded4"><image-slot id="wed-p3" shape="rect" fit="cover" placeholder="사진 3"></image-slot></div>
+      <div data-reveal="" style="position:relative;flex:1;aspect-ratio:4/5;background:#e2ded4"><image-slot id="wed-p4" shape="rect" fit="cover" placeholder="사진 4"></image-slot></div>
+    </div>
+  </section>
+
+  <section data-screen-label="05 안내" style="padding:44px 26px 46px;border-top:1px solid rgba(20,20,18,.14);border-bottom:1px solid rgba(20,20,18,.14)">
+    <div data-reveal="" style="display:grid;grid-template-columns:64px 1fr;gap:14px 16px;align-items:baseline;padding-bottom:18px;border-bottom:1px solid rgba(20,20,18,.1)">
+      <span style="font-size:10.5px;letter-spacing:.2em;color:#8c8578;padding-left:.2em">일시</span>
+      <span style="font-weight:300;font-size:15px;line-height:1.7;letter-spacing:.02em">2026년 9월 6일 일요일<br>낮 12시</span>
+    </div>
+    <div data-reveal="" style="display:grid;grid-template-columns:64px 1fr;gap:14px 16px;align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(20,20,18,.1)">
+      <span style="font-size:10.5px;letter-spacing:.2em;color:#8c8578;padding-left:.2em">장소</span>
+      <span style="font-weight:300;font-size:15px;line-height:1.7;letter-spacing:.02em">롯데호텔서울<br>무궁화</span>
+    </div>
+    <div data-reveal="" style="display:grid;grid-template-columns:64px 1fr;gap:14px 16px;align-items:baseline;padding-top:18px">
+      <span style="font-size:10.5px;letter-spacing:.2em;color:#8c8578;padding-left:.2em">예식</span>
+      <span style="font-weight:300;font-size:15px;line-height:1.7;letter-spacing:.02em">가족과 친지 40인만 모시는<br>소규모 예식으로 진행합니다.</span>
+    </div>
+    <sc-if value="{{ showDday }}" hint-placeholder-val="{{ true }}">
+      <div data-reveal="" style="margin-top:26px;padding-top:18px;border-top:1px solid rgba(20,20,18,.1);font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:.24em;color:#8c8578;padding-left:.24em">{{ ddayLine }}</div>
+    </sc-if>
+  </section>
+
+  <section data-screen-label="06 달력" style="padding:44px 26px 46px;border-bottom:1px solid rgba(20,20,18,.14)">
+    <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;gap:12px">
+      <span style="font-size:10.5px;letter-spacing:.36em;color:#8c8578;padding-left:.36em">달력</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:10.5px;letter-spacing:.24em;color:#8c8578;padding-left:.24em">SEPTEMBER 2026</span>
+    </div>
+
+    <div data-reveal="" style="margin-top:22px;display:grid;grid-template-columns:repeat(7,1fr);gap:2px 0;font-family:'Cormorant Garamond',serif;font-size:13px;color:#4a463d">
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">S</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">M</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">T</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">W</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">T</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">F</span>
+      <span style="text-align:center;font-size:9.5px;letter-spacing:.14em;color:#a09889;padding:0 0 10px .14em">S</span>
+      <span></span><span></span>
+      <span style="text-align:center;line-height:32px">1</span>
+      <span style="text-align:center;line-height:32px">2</span>
+      <span style="text-align:center;line-height:32px">3</span>
+      <span style="text-align:center;line-height:32px">4</span>
+      <span style="text-align:center;line-height:32px">5</span>
+      <span style="display:flex;align-items:center;justify-content:center;height:32px"><span style="display:flex;align-items:center;justify-content:center;width:30px;height:30px;background:#141412;color:#f4f3ef">6</span></span>
+      <span style="text-align:center;line-height:32px">7</span>
+      <span style="text-align:center;line-height:32px">8</span>
+      <span style="text-align:center;line-height:32px">9</span>
+      <span style="text-align:center;line-height:32px">10</span>
+      <span style="text-align:center;line-height:32px">11</span>
+      <span style="text-align:center;line-height:32px">12</span>
+      <span style="text-align:center;line-height:32px">13</span>
+      <span style="text-align:center;line-height:32px">14</span>
+      <span style="text-align:center;line-height:32px">15</span>
+      <span style="text-align:center;line-height:32px">16</span>
+      <span style="text-align:center;line-height:32px">17</span>
+      <span style="text-align:center;line-height:32px">18</span>
+      <span style="text-align:center;line-height:32px">19</span>
+      <span style="text-align:center;line-height:32px">20</span>
+      <span style="text-align:center;line-height:32px">21</span>
+      <span style="text-align:center;line-height:32px">22</span>
+      <span style="text-align:center;line-height:32px">23</span>
+      <span style="text-align:center;line-height:32px">24</span>
+      <span style="text-align:center;line-height:32px">25</span>
+      <span style="text-align:center;line-height:32px">26</span>
+      <span style="text-align:center;line-height:32px">27</span>
+      <span style="text-align:center;line-height:32px">28</span>
+      <span style="text-align:center;line-height:32px">29</span>
+      <span style="text-align:center;line-height:32px">30</span>
+    </div>
+
+    <div data-reveal="" style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <a href="{{ googleUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;height:44px;border:1px solid rgba(20,20,18,.28);font-size:11.5px;letter-spacing:.1em;color:#2e2b26;padding-left:.1em" style-hover="background:#141412;color:#f4f3ef;border-color:#141412">Google 캘린더</a>
+      <a href="./wedding.ics" style="display:flex;align-items:center;justify-content:center;height:44px;border:1px solid rgba(20,20,18,.28);font-size:11.5px;letter-spacing:.1em;color:#2e2b26;padding-left:.1em" style-hover="background:#141412;color:#f4f3ef;border-color:#141412">iPhone 캘린더</a>
+    </div>
+    <div data-reveal="" style="margin-top:12px;font-size:10.5px;letter-spacing:.04em;color:#a09889;line-height:1.7">버튼을 누르면 예식 일정이 캘린더에 추가됩니다.</div>
+  </section>
+
+  <section data-screen-label="07 맺음" style="position:relative;width:100%;aspect-ratio:1/1;background:#e2ded4">
+    <image-slot id="wed-p5" shape="rect" fit="cover" placeholder="맺음 사진 (정사각)"></image-slot>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(17,17,16,.58) 0%,rgba(17,17,16,0) 55%)"></div>
+    <div style="position:absolute;left:26px;right:26px;bottom:26px;pointer-events:none">
+      <p style="margin:0;font-weight:300;font-size:14px;line-height:1.9;color:rgba(244,243,239,.94)">그날의 저희를 기억해 주세요.</p>
+      <div style="margin-top:14px;font-family:'Cormorant Garamond',serif;font-size:10.5px;letter-spacing:.3em;color:rgba(244,243,239,.62);padding-left:.3em">06 SEPTEMBER 2026</div>
+    </div>
+  </section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:440,&quot;height&quot;:932},&quot;bgmSrc&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;./bgm.mp3&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;배경음악&quot;},&quot;autoplayBgm&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;배경음악&quot;},&quot;showDday&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;내용&quot;}}">
+class Component extends DCLogic {
+  state = { playing: false };
+
+  componentDidMount() {
+    const nodes = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.animation = 'riseIn .85s cubic-bezier(.2,.7,.3,1) both';
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    nodes.forEach((n, i) => {
+      n.style.opacity = '0';
+      n.style.animationDelay = (i % 5) * 70 + 'ms';
+      io.observe(n);
+    });
+    this._io = io;
+
+    const a = new Audio(this.props.bgmSrc || './bgm.mp3');
+    a.loop = true; a.volume = 0.45; a.preload = 'auto';
+    this.audio = a;
+    if (this.props.autoplayBgm !== false) {
+      a.play().then(() => this.setState({ playing: true })).catch(() => {
+        const kick = () => {
+          a.play().then(() => this.setState({ playing: true })).catch(() => {});
+        };
+        window.addEventListener('pointerdown', kick, { once: true });
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    if (this.audio) { this.audio.pause(); this.audio = null; }
+  }
+
+  bar(i) {
+    const h = [6, 12, 9][i];
+    const base = 'display:block;width:2px;height:' + h + 'px;background:#e6e3db;transform-origin:center;';
+    return this.state.playing
+      ? base + 'animation:barPulse ' + (0.72 + i * 0.2) + 's ease-in-out infinite;'
+      : base + 'opacity:.4;transform:scaleY(.3);';
+  }
+
+  renderVals() {
+    const day = 24 * 60 * 60 * 1000;
+    const now = new Date();
+    const diff = Math.round((new Date(2026, 8, 6) - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / day);
+    const title = '최동욱 · 최희정 결혼식';
+    const loc = '롯데호텔서울 무궁화';
+    const desc = '2026년 9월 6일 일요일 낮 12시, 롯데호텔서울 무궁화';
+    return {
+      googleUrl: 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='
+        + encodeURIComponent(title) + '&dates=20260906T030000Z/20260906T050000Z&location='
+        + encodeURIComponent(loc) + '&details=' + encodeURIComponent(desc),
+      ddayLine: diff > 0 ? 'D − ' + diff : diff === 0 ? 'TODAY' : 'D + ' + Math.abs(diff),
+      showDday: this.props.showDday !== false,
+      bgmLabel: this.state.playing ? 'MUSIC ON' : 'MUSIC OFF',
+      bar1: this.bar(0), bar2: this.bar(1), bar3: this.bar(2),
+      toggleBgm: () => {
+        const a = this.audio; if (!a) return;
+        if (a.paused) { a.play().then(() => this.setState({ playing: true })).catch(() => {}); }
+        else { a.pause(); this.setState({ playing: false }); }
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
